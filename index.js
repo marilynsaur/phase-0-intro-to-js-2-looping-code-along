@@ -1,17 +1,16 @@
 
-const thankYouCards = []; 
-function writeCards(thankYouCards, event) {
-  for (let i = 0; i < thankYouCards.length; i++) {
-    thankYouCards.splice(i,1, `Thank you, ${thankYouCards[i]}, for the wonderful ${event} gift!`)
+const names = [];
+function writeCards(names, surprise) {
+  for (let i = 0; i < names.length; i++) {
+    names.splice(i, 1, `Thank you, ${names[i]}, for the wonderful ${surprise} gift!`)
   }
-    return thankYouCards;
-}
-    
-  
-function countDown (){
-let countDown = 0;
-while (countDown <11) {
-    console.log(countDown++);
+  return names;
 }
 
+
+function countDown() {
+  let countDown = 0;
+  while (countDown < 11) {
+    console.log(countDown++);
+  }
 }
